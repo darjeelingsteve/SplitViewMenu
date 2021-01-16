@@ -16,7 +16,6 @@
 		480FEF6325B331AA0006198B /* MainSceneRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF6225B331AA0006198B /* MainSceneRootViewController.swift */; };
 		482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFB25B0886900F28438 /* AppDelegate.swift */; };
 		482E9DFE25B0886900F28438 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFD25B0886900F28438 /* SceneDelegate.swift */; };
-		482E9E0025B0886900F28438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFF25B0886900F28438 /* ViewController.swift */; };
 		482E9E0325B0886900F28438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482E9E0125B0886900F28438 /* Main.storyboard */; };
 		482E9E0525B0886B00F28438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482E9E0425B0886B00F28438 /* Assets.xcassets */; };
 		482E9E0825B0886B00F28438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482E9E0625B0886B00F28438 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 		482E9DF825B0886900F28438 /* SplitViewMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		482E9DFB25B0886900F28438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		482E9DFD25B0886900F28438 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		482E9DFF25B0886900F28438 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		482E9E0225B0886900F28438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		482E9E0425B0886B00F28438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		482E9E0725B0886B00F28438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				480FEF4D25B32CD70006198B /* View Controllers */,
 				482E9DFB25B0886900F28438 /* AppDelegate.swift */,
 				482E9DFD25B0886900F28438 /* SceneDelegate.swift */,
-				482E9DFF25B0886900F28438 /* ViewController.swift */,
 				482E9E0125B0886900F28438 /* Main.storyboard */,
 				482E9E0425B0886B00F28438 /* Assets.xcassets */,
 				482E9E0625B0886B00F28438 /* LaunchScreen.storyboard */,
@@ -203,7 +200,6 @@
 				480FEF5125B32DD30006198B /* UILabel+Extensions.swift in Sources */,
 				480FEF5425B32E3F0006198B /* PresenterDetailsViewController.swift in Sources */,
 				480FEF6325B331AA0006198B /* MainSceneRootViewController.swift in Sources */,
-				482E9E0025B0886900F28438 /* ViewController.swift in Sources */,
 				482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */,
 				480FEF6025B32FAB0006198B /* PresentersMenuViewController.swift in Sources */,
 				482E9E1D25B09AA100F28438 /* PresenterGroup.swift in Sources */,
