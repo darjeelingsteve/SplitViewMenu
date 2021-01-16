@@ -17,9 +17,9 @@ final class PrimaryNavigationLayoutFixingSplitViewController: UISplitViewControl
         super.setViewController(vc, for: column)
         guard column == .primary, let viewController = vc else { return }
         
-        primaryColumnSafeAreaInsetsKVOToken = viewController.view.observe(\.safeAreaInsets) { [weak viewController] (_, _) in
-            guard let viewController = viewController else { return }
             guard viewController.view.frame.maxX > 0 else {
+        primaryColumnSafeAreaInsetsKVOToken = viewController.view.observe(\.safeAreaInsets) { [weak self, weak viewController] (_, _) in
+            guard let self = self, !self.isCollapsed, let viewController = viewController else { return }
                 /// The primary column view controller's view is not visible, so
                 /// we do not need to make any adjustments.
                 return
