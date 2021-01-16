@@ -13,6 +13,9 @@
 		482E9E0325B0886900F28438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482E9E0125B0886900F28438 /* Main.storyboard */; };
 		482E9E0525B0886B00F28438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482E9E0425B0886B00F28438 /* Assets.xcassets */; };
 		482E9E0825B0886B00F28438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482E9E0625B0886B00F28438 /* LaunchScreen.storyboard */; };
+		482E9E1725B0931200F28438 /* MasterChefPresenterGroups.json in Resources */ = {isa = PBXBuildFile; fileRef = 482E9E1625B0931200F28438 /* MasterChefPresenterGroups.json */; };
+		482E9E1A25B09A5200F28438 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9E1925B09A5200F28438 /* Presenter.swift */; };
+		482E9E1D25B09AA100F28438 /* PresenterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9E1C25B09AA100F28438 /* PresenterGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		482E9E0425B0886B00F28438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		482E9E0725B0886B00F28438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		482E9E0925B0886B00F28438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		482E9E1625B0931200F28438 /* MasterChefPresenterGroups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MasterChefPresenterGroups.json; sourceTree = "<group>"; };
+		482E9E1925B09A5200F28438 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		482E9E1C25B09AA100F28438 /* PresenterGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		482E9DFA25B0886900F28438 /* SplitViewMenu */ = {
 			isa = PBXGroup;
 			children = (
+				482E9E1525B0931200F28438 /* Data */,
 				482E9DFB25B0886900F28438 /* AppDelegate.swift */,
 				482E9DFD25B0886900F28438 /* SceneDelegate.swift */,
 				482E9DFF25B0886900F28438 /* ViewController.swift */,
@@ -65,6 +72,16 @@
 				482E9E0925B0886B00F28438 /* Info.plist */,
 			);
 			path = SplitViewMenu;
+			sourceTree = "<group>";
+		};
+		482E9E1525B0931200F28438 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				482E9E1625B0931200F28438 /* MasterChefPresenterGroups.json */,
+				482E9E1925B09A5200F28438 /* Presenter.swift */,
+				482E9E1C25B09AA100F28438 /* PresenterGroup.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482E9E1725B0931200F28438 /* MasterChefPresenterGroups.json in Resources */,
 				482E9E0825B0886B00F28438 /* LaunchScreen.storyboard in Resources */,
 				482E9E0525B0886B00F28438 /* Assets.xcassets in Resources */,
 				482E9E0325B0886900F28438 /* Main.storyboard in Resources */,
@@ -139,6 +157,8 @@
 			files = (
 				482E9E0025B0886900F28438 /* ViewController.swift in Sources */,
 				482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */,
+				482E9E1D25B09AA100F28438 /* PresenterGroup.swift in Sources */,
+				482E9E1A25B09A5200F28438 /* Presenter.swift in Sources */,
 				482E9DFE25B0886900F28438 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

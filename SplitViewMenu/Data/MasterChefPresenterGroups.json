@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Current",
+    "presenters": [
+      {
+        "name": "Gregg Wallace",
+        "biography": "Gregg Allan Wallace (born 17 October 1964) is an English television presenter known for co-presenting MasterChef, Celebrity MasterChef and MasterChef: The Professionals on BBC One and BBC Two. He is also a writer, media personality and former baker, costermonger and farmer."
+      },
+      {
+        "name": "John Torode",
+        "biography": "John Douglas Torode is an Australian celebrity chef. He moved to the UK in the 1990s and began working at Conran Group's restaurants."
+      }
+    ]
+  },
+  {
+    "name": "Professionals",
+    "presenters": [
+      {
+        "name": "Marcus Wareing",
+        "biography": "Marcus Wareing is an English celebrity chef who is currently Chef Patron of the one-Michelin-starred restaurant Marcus, in Knightsbridge."
+      },
+      {
+        "name": "Monica Galetti",
+        "biography": "Monica Galetti (née Fa'afiti, born 1975) is a Samoan-born New Zealand chef who is based in London, England."
+      }
+    ]
+  },
+  {
+    "name": "Historical",
+    "presenters": [
+      {
+        "name": "Michel Roux",
+        "biography": "Michel Albert Roux (born 23 May 1960), known as Michel Roux Jr., is a French-British two-star Michelin chef at the London restaurant Le Gavroche."
+      },
+      {
+        "name": "Loyd Grossman",
+        "biography": "Loyd Daniel Gilman Grossman CBE FSA (born 16 September 1950) is an American-British television presenter, gastronome and musician who has mainly worked in the United Kingdom."
+      },
+      {
+        "name": "Gary Rhodes",
+        "biography": "Gary Rhodes OBE (born 22 April 1960) is an English restaurateur and television chef, known for his love of British cuisine and the distinctive spiked hair style that he once wore."
+      }
+    ]
+  }
+]
