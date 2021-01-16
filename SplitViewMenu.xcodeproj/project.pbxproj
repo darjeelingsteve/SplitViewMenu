@@ -13,6 +13,7 @@
 		480FEF5A25B32F130006198B /* PresenterGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF5925B32F130006198B /* PresenterGroupViewController.swift */; };
 		480FEF5D25B32F5A0006198B /* PresenterGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF5C25B32F5A0006198B /* PresenterGroupsViewController.swift */; };
 		480FEF6025B32FAB0006198B /* PresentersMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF5F25B32FAB0006198B /* PresentersMenuViewController.swift */; };
+		480FEF6325B331AA0006198B /* MainSceneRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF6225B331AA0006198B /* MainSceneRootViewController.swift */; };
 		482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFB25B0886900F28438 /* AppDelegate.swift */; };
 		482E9DFE25B0886900F28438 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFD25B0886900F28438 /* SceneDelegate.swift */; };
 		482E9E0025B0886900F28438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFF25B0886900F28438 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		480FEF5925B32F130006198B /* PresenterGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterGroupViewController.swift; sourceTree = "<group>"; };
 		480FEF5C25B32F5A0006198B /* PresenterGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterGroupsViewController.swift; sourceTree = "<group>"; };
 		480FEF5F25B32FAB0006198B /* PresentersMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentersMenuViewController.swift; sourceTree = "<group>"; };
+		480FEF6225B331AA0006198B /* MainSceneRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRootViewController.swift; sourceTree = "<group>"; };
 		482E9DF825B0886900F28438 /* SplitViewMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		482E9DFB25B0886900F28438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		482E9DFD25B0886900F28438 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				480FEF4E25B32CE20006198B /* Menu */,
+				480FEF6225B331AA0006198B /* MainSceneRootViewController.swift */,
 				480FEF5625B32E990006198B /* NoPresenterSelectedViewController.swift */,
 				480FEF5325B32E3F0006198B /* PresenterDetailsViewController.swift */,
 			);
@@ -199,6 +202,7 @@
 			files = (
 				480FEF5125B32DD30006198B /* UILabel+Extensions.swift in Sources */,
 				480FEF5425B32E3F0006198B /* PresenterDetailsViewController.swift in Sources */,
+				480FEF6325B331AA0006198B /* MainSceneRootViewController.swift in Sources */,
 				482E9E0025B0886900F28438 /* ViewController.swift in Sources */,
 				482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */,
 				480FEF6025B32FAB0006198B /* PresentersMenuViewController.swift in Sources */,
