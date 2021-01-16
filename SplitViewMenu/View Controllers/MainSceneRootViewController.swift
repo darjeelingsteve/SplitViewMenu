@@ -11,7 +11,7 @@ import UIKit
 /// the application's main scene.
 final class MainSceneRootViewController: UIViewController {
     private let childSplitViewController: UISplitViewController = {
-        let childSplitViewController = UISplitViewController(style: .doubleColumn)
+        let childSplitViewController = PrimaryNavigationLayoutFixingSplitViewController(style: .doubleColumn)
         childSplitViewController.preferredDisplayMode = .oneBesideSecondary
         childSplitViewController.preferredSplitBehavior = .tile
         return childSplitViewController
