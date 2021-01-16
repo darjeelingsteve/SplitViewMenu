@@ -11,6 +11,7 @@
 		480FEF5425B32E3F0006198B /* PresenterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF5325B32E3F0006198B /* PresenterDetailsViewController.swift */; };
 		480FEF5725B32E990006198B /* NoPresenterSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF5625B32E990006198B /* NoPresenterSelectedViewController.swift */; };
 		480FEF5A25B32F130006198B /* PresenterGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF5925B32F130006198B /* PresenterGroupViewController.swift */; };
+		480FEF5D25B32F5A0006198B /* PresenterGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF5C25B32F5A0006198B /* PresenterGroupsViewController.swift */; };
 		482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFB25B0886900F28438 /* AppDelegate.swift */; };
 		482E9DFE25B0886900F28438 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFD25B0886900F28438 /* SceneDelegate.swift */; };
 		482E9E0025B0886900F28438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFF25B0886900F28438 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		480FEF5325B32E3F0006198B /* PresenterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterDetailsViewController.swift; sourceTree = "<group>"; };
 		480FEF5625B32E990006198B /* NoPresenterSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPresenterSelectedViewController.swift; sourceTree = "<group>"; };
 		480FEF5925B32F130006198B /* PresenterGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterGroupViewController.swift; sourceTree = "<group>"; };
+		480FEF5C25B32F5A0006198B /* PresenterGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterGroupsViewController.swift; sourceTree = "<group>"; };
 		482E9DF825B0886900F28438 /* SplitViewMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		482E9DFB25B0886900F28438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		482E9DFD25B0886900F28438 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		480FEF4E25B32CE20006198B /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				480FEF5C25B32F5A0006198B /* PresenterGroupsViewController.swift */,
 				480FEF5925B32F130006198B /* PresenterGroupViewController.swift */,
 			);
 			path = Menu;
@@ -196,6 +199,7 @@
 				482E9E0025B0886900F28438 /* ViewController.swift in Sources */,
 				482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */,
 				482E9E1D25B09AA100F28438 /* PresenterGroup.swift in Sources */,
+				480FEF5D25B32F5A0006198B /* PresenterGroupsViewController.swift in Sources */,
 				482E9E1A25B09A5200F28438 /* Presenter.swift in Sources */,
 				480FEF5A25B32F130006198B /* PresenterGroupViewController.swift in Sources */,
 				482E9DFE25B0886900F28438 /* SceneDelegate.swift in Sources */,
