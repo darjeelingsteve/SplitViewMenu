@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480FEF5125B32DD30006198B /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEF5025B32DD30006198B /* UILabel+Extensions.swift */; };
 		482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFB25B0886900F28438 /* AppDelegate.swift */; };
 		482E9DFE25B0886900F28438 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFD25B0886900F28438 /* SceneDelegate.swift */; };
 		482E9E0025B0886900F28438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482E9DFF25B0886900F28438 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		480FEF5025B32DD30006198B /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		482E9DF825B0886900F28438 /* SplitViewMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		482E9DFB25B0886900F28438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		482E9DFD25B0886900F28438 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480FEF4F25B32DC10006198B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				480FEF5025B32DD30006198B /* UILabel+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		482E9DEF25B0886900F28438 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				482E9E1525B0931200F28438 /* Data */,
+				480FEF4F25B32DC10006198B /* Extensions */,
 				482E9DFB25B0886900F28438 /* AppDelegate.swift */,
 				482E9DFD25B0886900F28438 /* SceneDelegate.swift */,
 				482E9DFF25B0886900F28438 /* ViewController.swift */,
@@ -155,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480FEF5125B32DD30006198B /* UILabel+Extensions.swift in Sources */,
 				482E9E0025B0886900F28438 /* ViewController.swift in Sources */,
 				482E9DFC25B0886900F28438 /* AppDelegate.swift in Sources */,
 				482E9E1D25B09AA100F28438 /* PresenterGroup.swift in Sources */,
