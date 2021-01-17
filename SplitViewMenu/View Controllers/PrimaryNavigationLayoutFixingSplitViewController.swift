@@ -25,7 +25,7 @@ final class PrimaryNavigationLayoutFixingSplitViewController: UISplitViewControl
                 return
             }
             
-            self.applyAdditionalSafeAreaInsets(to: viewController)
+            self.applyCorrectSafeAreaInsets(to: viewController)
             if let childNavigationController = viewController.children.first as? UINavigationController {
                 /// Mark the navigation bar as needing layout to ensure that a
                 /// fresh layout pass occurs, which makes sure that
@@ -35,20 +35,38 @@ final class PrimaryNavigationLayoutFixingSplitViewController: UISplitViewControl
         }
     }
     
-    private func applyAdditionalSafeAreaInsets(to viewController: UIViewController) {
-        switch viewController.traitCollection.layoutDirection {
-        case .leftToRight, .unspecified:
-            let expectedLeftSafeAreaInset: CGFloat = -viewController.view.frame.origin.x
-            if viewController.view.safeAreaInsets.left != expectedLeftSafeAreaInset, expectedLeftSafeAreaInset > 0 {
-                viewController.additionalSafeAreaInsets.left = expectedLeftSafeAreaInset - viewController.view.safeAreaInsets.left
-            }
-        case .rightToLeft:
-            let expectedRightSafeAreaInset: CGFloat = view.convert(viewController.view.bounds, from: viewController.view).maxX - view.bounds.maxX
-            if viewController.view.safeAreaInsets.right != expectedRightSafeAreaInset, expectedRightSafeAreaInset > 0 {
-                viewController.additionalSafeAreaInsets.right = expectedRightSafeAreaInset - viewController.view.safeAreaInsets.right
-            }
-        @unknown default:
-            fatalError("Unsupported layout direction")
+    private func applyCorrectSafeAreaInsets(to viewController: UIViewController) {
+        let correctHorizontalSafeAreaInsets = self.correctHorizontalSafeAreaInsets(forMenuView: viewController.view)
+        guard correctHorizontalSafeAreaInsets != .zero else { return }
+        
+        if viewController.view.safeAreaInsets.left != correctHorizontalSafeAreaInsets.left {
+            viewController.additionalSafeAreaInsets.left = correctHorizontalSafeAreaInsets.left - viewController.view.safeAreaInsets.left
+        } else if viewController.view.safeAreaInsets.right != correctHorizontalSafeAreaInsets.right {
+            viewController.additionalSafeAreaInsets.right = correctHorizontalSafeAreaInsets.right - viewController.view.safeAreaInsets.right
         }
+    }
+    
+    private func correctHorizontalSafeAreaInsets(forMenuView menuView: UIView) -> UIEdgeInsets {
+        /// Create the `menuView` frame in the split view's coordinate space.
+        let convertedMenuViewFrame = view.convert(menuView.bounds, from: menuView)
+        
+        /// The amount that `menuView` is offset beyond the split view's left
+        /// bounds.
+        let leftMenuOffset = view.bounds.origin.x - convertedMenuViewFrame.origin.x
+        
+        /// The amount that `menuView` is offset beyond the split view's right
+        /// bounds.
+        let rightOffset = convertedMenuViewFrame.maxX - view.bounds.maxX
+        
+        if leftMenuOffset > 0 {
+            /// The menu view is positioned to the left of the split view, so we
+            /// need to adjust its left safe area inset to compensate.
+            return UIEdgeInsets(top: 0, left: leftMenuOffset, bottom: 0, right: 0)
+        } else if rightOffset > 0 {
+            /// The menu view is positioned to the right of the split view, so we
+            /// need to adjust its right safe area inset to compensate.
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: rightOffset)
+        }
+        return .zero
     }
 }
