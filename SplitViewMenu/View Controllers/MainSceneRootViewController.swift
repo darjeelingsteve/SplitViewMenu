@@ -27,8 +27,6 @@ final class MainSceneRootViewController: UIViewController {
         
         let presentersMenuViewController = PresentersMenuViewController()
         presentersMenuViewController.delegate = self
-        childSplitViewController.preferredDisplayMode = .oneBesideSecondary
-        childSplitViewController.preferredSplitBehavior = .tile
         childSplitViewController.setViewController(presentersMenuViewController, for: .primary)
         childSplitViewController.setViewController(secondaryColumnNavigationController, for: .secondary)
         childSplitViewController.setViewController(UINavigationController(rootViewController: NoPresenterSelectedViewController()), for: .compact)
