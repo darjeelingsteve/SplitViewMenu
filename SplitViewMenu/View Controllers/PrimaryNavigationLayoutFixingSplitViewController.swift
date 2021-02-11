@@ -46,7 +46,7 @@ final class PrimaryNavigationLayoutFixingSplitViewController: UISplitViewControl
     }
     
     private func applyCorrectSafeAreaInsets(to viewController: UIViewController) {
-        let correctHorizontalSafeAreaInsets = self.correctHorizontalSafeAreaInsets(forPrimaryColumnView: viewController.view)
+        guard let correctHorizontalSafeAreaInsets = self.correctHorizontalSafeAreaInsets(forPrimaryColumnView: viewController.view) else { return }
         
         if viewController.view.safeAreaInsets.left != correctHorizontalSafeAreaInsets.left {
             viewController.additionalSafeAreaInsets.left = 0
@@ -57,8 +57,17 @@ final class PrimaryNavigationLayoutFixingSplitViewController: UISplitViewControl
         }
     }
     
-    private func correctHorizontalSafeAreaInsets(forPrimaryColumnView primaryColumnView: UIView) -> UIEdgeInsets {
+    private func correctHorizontalSafeAreaInsets(forPrimaryColumnView primaryColumnView: UIView) -> UIEdgeInsets? {
         let requiredHorizontalSafeAreaInset = primaryColumnView.bounds.width - primaryColumnWidth
+        guard requiredHorizontalSafeAreaInset >= 0 else {
+            /// `primaryColumnWidth` is greater than the primary column view's
+            /// width. This can occur during expansion of the split view from a
+            /// collapsed state e.g when the user resizes the app in the iOS
+            /// multi-tasking Split View. As such, we cannot determine the
+            /// correct safe area insets, so return `nil` and wait for the next
+            /// layout pass when the primary column has been sized correctly.
+            return nil
+        }
         
         /// Create the `primaryColumnView` frame in the split view's coordinate
         /// space.
